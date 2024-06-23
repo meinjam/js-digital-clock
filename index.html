@@ -5,32 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            background: #333;
-        }
-
-        h1,p {
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            font-size: 4rem;
-            color: yellow;
-            padding-top: 2em;
-        }
-
-        span {
-            padding: 20px;
-            background: #444;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+    <title>Digital Clock</title>
 </head>
 
-<body>
-    <h1></h1>
-    <p style="padding-top: 0px; font-size: 6rem;">Digital Clock</p>
-    <p style="padding-top: 0px; font-size: 2rem;">made with ❤️️ by injam</p>
-    <script src="app.js"></script>
+<body class="bg-gray-800 text-amber-400">
+    <div class="min-h-dvh flex items-center justify-center flex-col gap-10">
+        <div class="flex items-center gap-2">
+            <span class="span-output" id="hour">00</span>
+            <span class="text-4xl">:</span>
+            <span class="span-output" id="minute">00</span>
+            <span class="text-4xl">:</span>
+            <span class="span-output" id="second">00</span>
+            <span class="self-end" id="amPm">AM</span>
+        </div>
+        <p class="text-7xl md:text-8xl text-center">Digital Clock</p>
+        <p class="text-4xl text-center">made with ❤️️ by injam</p>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
